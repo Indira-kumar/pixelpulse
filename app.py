@@ -1,16 +1,7 @@
 # pylint: disable=wildcard-import, unused-wildcard-import, wrong-import-position
 
 """
-Oblivion-Inverse - A Simple E-mail Tracking Solution.
-
-Oblivion-Inverse is a simple e-mail tracking solution built with Flask and Firebase.
-It allows you to generate a unique tracking images for your e-mails. It allows you to
-track when your e-mails are opened and further information about the device and browser
-used to open the e-mail.
-
-@Author: Dilshan-H (GitHub: dilshan-h)
 @License: MIT
-@URL: https://github.com/Dilshan-H/Oblivion-Inverse
 """
 
 import os
@@ -22,16 +13,13 @@ from firebase_admin import credentials, auth
 cred = credentials.Certificate("credentials.json")
 firebase_admin.initialize_app(
     cred,
-    # {"databaseURL": os.environ["FIREBASE_DB_URL"]},
-    {"databaseURL":"https://email-tracker-indumati-default-rtdb.asia-southeast1.firebasedatabase.app/"},
-
+    {"databaseURL": os.environ["FIREBASE_DB_URL"]},
 )
 
 app = Flask(__name__, static_url_path="/static", static_folder="static")
 
 app.config["DEBUG"] = False
-# app.config["SECRET_KEY"] = os.environ["SECRET_KEY"]
-app.config["SECRET_KEY"] = "keshav"
+app.config["SECRET_KEY"] = os.environ["SECRET_KEY"]
 
 
 @app.before_request
