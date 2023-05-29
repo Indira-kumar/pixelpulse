@@ -12,7 +12,34 @@
 - [⚠️ Disclaimer](#disclaimer)
 
 ## About the Project <a name="about-project"></a>
+### 1. Abstract:
+The goal of this project is to develop an email tracking and resend system that detects
+whether the recipient has read a sent email and takes appropriate actions based on
+their response. The system addresses the common issue of unanswered emails by
+automatically resending the email if it remains unseen, or if a reply has not been
+received within a week.
+### 2. Problem Statement:
+The current email communication process lacks a reliable mechanism to
+determine whether recipients have read sent emails, leading to uncertainties and delays
+in receiving responses. This poses a challenge for individuals and organizations who
+depend on timely communication for efficient workflow and effective collaboration.
+Furthermore, there is no automated system in place to resend emails that have not
+been seen or to prompt responses in case of prolonged silence.
+### 3. Proposed Solution:
+This project is in line with the Rethink theme.
 
+**Email Tracking**: The system will utilize tracking technologies to monitor whether
+recipients have read sent emails. It will provide real-time notifications to senders,
+indicating when an email has been opened and read.
+Resend Automation: If an email remains unseen after a specified period or if a reply has
+not been received within a week, the system will automatically initiate a resend action.
+This proactive approach ensures that important emails are not missed or overlooked by
+recipients.
+
+**Clear Status Notifications**: The system will provide clear and informative status
+notifications to senders, indicating the current read status and the actions taken for each
+email. This transparency empowers users with a comprehensive overview of their email
+communications.
 
 ## 👥 Authors <a name="authors"></a>
 
