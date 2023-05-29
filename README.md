@@ -1,4 +1,4 @@
-# pixelpulse - An email tracker
+# PixelPulse - An email tracker
 
 <a name="readme-top"></a>
 # 📗 Table of Contents
